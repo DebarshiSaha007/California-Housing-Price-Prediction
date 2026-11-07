@@ -1,9 +1,11 @@
 import streamlit as st
 import pandas as pd
 import joblib
+from pathlib import Path
 
-# Load the trained Random Forest model
-model = joblib.load("california_housing_model.pkl")
+# Load model from the same folder as app.py
+model_path = Path(__file__).parent / "california_housing_model.pkl"
+model = joblib.load(model_path)
 
 # Configure the Streamlit page
 st.set_page_config(
