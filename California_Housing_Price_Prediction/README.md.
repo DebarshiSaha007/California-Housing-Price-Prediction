@@ -1,0 +1,68 @@
+California Housing Price Prediction
+
+Project Overview
+
+This project uses machine learning regression algorithms to predict median house values in California based on housing and geographical features.
+
+A Streamlit application allows users to enter housing details and receive an estimated median house value.
+
+Dataset
+
+•⁠  ⁠Dataset: California Housing
+•⁠  ⁠Number of records: 20,640
+•⁠  ⁠Features: 8
+•⁠  ⁠Target: MedHouseVal
+•⁠  ⁠Target values are measured in units of $100,000.
+
+Machine Learning Algorithms
+
+Three regression algorithms were trained and evaluated:
+
+1.⁠ ⁠Linear Regression
+2.⁠ ⁠Decision Tree Regressor
+3.⁠ ⁠Random Forest Regressor
+
+Evaluation Metrics
+
+The models were evaluated using:
+
+•⁠  ⁠Mean Absolute Error (MAE)
+•⁠  ⁠Mean Squared Error (MSE)
+•⁠  ⁠Root Mean Squared Error (RMSE)
+•⁠  ⁠R² Score
+
+Technologies Used
+
+•⁠  ⁠Python
+•⁠  ⁠NumPy
+•⁠  ⁠Pandas
+•⁠  ⁠Matplotlib
+•⁠  ⁠Seaborn
+•⁠  ⁠Scikit-learn
+•⁠  ⁠Streamlit
+•⁠  ⁠Joblib
+•⁠  ⁠Jupyter Notebook
+
+Project Files
+
+•⁠  ⁠california_housing_project.ipynb — data exploration, model training and evaluation
+•⁠  ⁠app.py — Streamlit prediction application
+•⁠  ⁠california_housing_model.pkl — saved Random Forest model
+•⁠  ⁠housing_model_comparison.csv — model evaluation results
+•⁠  ⁠housing_feature_importance.csv — feature importance results
+•⁠  ⁠housing_model_comparison.png — model comparison chart
+•⁠  ⁠housing_feature_importance.png — feature importance chart
+
+How to Run the Application
+
+1.⁠ ⁠Install the required packages:
+    python -m pip install streamlit numpy pandas scikit-learn joblib
+2.⁠ ⁠Open the project folder in the terminal.
+3.⁠ ⁠Run:
+    streamlit run app.py
+4.⁠ ⁠Open the local address shown in the terminal.
+5.⁠ ⁠Enter housing details and click Predict House Price.
+
+Conclusion
+
+This project demonstrates how regression algorithms can be used to estimate median house values. The three models were compared using standard regression evaluation metrics, and the trained Random Forest model was integrated into a Streamlit application.
