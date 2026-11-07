@@ -1,11 +1,13 @@
-
+from pathlib import Path
 import streamlit as st
 import pandas as pd
 import joblib
 
 # Load trained model and training feature ranges
-model = joblib.load("california_housing_model.pkl")
-feature_ranges = joblib.load("housing_feature_ranges.pkl")
+BASE_DIR = Path(__file__).resolve().parent
+
+model = joblib.load(BASE_DIR / "california_housing_model.pkl")
+feature_ranges = joblib.load(BASE_DIR / "housing_feature_ranges.pkl")
 
 st.set_page_config(
     page_title="California Housing Price Predictor",
